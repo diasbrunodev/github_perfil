@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+#root {
+    background-color: var(--corBackgroundContainer);
+}
+
 .container {
     max-width: 960px;
     width: 100%;
@@ -14,4 +18,48 @@
 :root {
     --corPrincipal: #f9ca24;
     --corSecundaria: #111;
+    --corBackgroundContainer: rgba(249, 202, 36, .3);
+}
+
+h1 {
+    text-align: center;
+    color: var(--corPrincipal);
+    padding-top: 20px;
+}
+
+.top {
+    width: 100%;
+    margin: auto;
+    background-color: #111;
+}
+
+.topForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--corPrincipal);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+
+
+
 }
